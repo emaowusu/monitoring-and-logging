@@ -1,0 +1,124 @@
+body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #fff;
+    max-width: 40%;
+    height: 300px;
+    padding: 30px;
+    margin: 15% auto;
+    margin-top: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 15px;
+}
+
+#timer {
+    color: #d61f1f;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+} 
+
+.hori-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    margin: 0;
+    font-style: italic;
+}
+
+.answer-container {
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    width: 50%;
+    margin: 15px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+button {
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: large;
+    display: block;
+    width: 50%;
+    padding: 10px;
+    /* background: rgb(227, 212, 3); */
+    background: rgb(235, 84, 20);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 25%;
+}
+
+button:hover {
+    /* background: rgb(228, 175, 3); */
+    background: rgb(147, 56, 10);
+}
+
+.checkmark {
+    color: transparent;
+    animation: checkmark 0.5s ease;
+}
+
+.cross {
+    color: transparent;
+    animation: cross 0.5s ease;
+}
+
+@keyframes checkmark {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: green;
+    }
+}
+
+@keyframes cross {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: red;
+    }
+}
+
+.play-again-button {
+    position: absolute;
+    top: 45%;
+    left: 47.5%;
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding:15px 30px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}

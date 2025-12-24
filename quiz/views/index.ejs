@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game App</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body id="app">
+
+    <form class="container" action="/quiz" method="post">
+        <div class="hori-container">
+            <h3>Total Score: <span>
+                <%= locals.totalScore ? totalScore : "0" %>
+            </span>
+        </h3>
+        
+        </div>
+
+        <h2>
+            <%= question.questions %>
+        </h2>
+
+        <div class="answer-container">
+            <input type="text" name="answer" placeholder="Please type your answer here" autofocus autocomplete="off">
+        </div>
+
+        <button type="submit">SUBMIT<% if (locals.wasCorrect) { %>
+            <span class="checkmark">✔</span>
+            <% } else if (locals.wasCorrect === false) { %>
+                <span class="cross">✖</span>
+            <% } %>
+        </button>
+
+    </form>
+
+<script src="/js/main.js"></script>
+
+</body>
