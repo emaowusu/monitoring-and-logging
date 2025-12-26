@@ -5,14 +5,14 @@ sudo -i -u postgres
 psql
 
 -- CREATE USER WITH NAME nodeuser AND PASSWORD mypassword233
-CREATE USER nodeuser WITH PASSWORD 'mypassword233';
+CREATE USER quizuser WITH PASSWORD 'quizpass233';
 
 
 -- CREATE DATABASE
 CREATE DATABASE world;
 
 -- GRANT PRIVILEGES 
-GRANT ALL PRIVILEGES ON DATABASE world TO nodeuser;
+GRANT ALL PRIVILEGES ON DATABASE quizdb TO quizuser;
 
 -- EXIT postgreSQL SHELL
 \q

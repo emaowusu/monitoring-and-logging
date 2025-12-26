@@ -35,8 +35,8 @@ app.use((req, res, next) => {
 const db = new pg.Client({
   user: process.env.DB_USER || 'quizuser',
   host: process.env.DB_HOST || 'localhost',
-  database: process.env.DB_NAME || 'world',
-  password: process.env.DB_PASSWORD || 'quizpass',
+  database: process.env.DB_NAME || 'quizdb',
+  password: process.env.DB_PASSWORD || 'quizpass223',
   port: process.env.DB_PORT || 5432
 });
 

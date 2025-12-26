@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Variables
-DB_USER="nodeuser"
-DB_PASSWORD="mypassword123"
-DB_NAME="world"
+DB_USER="quizuser"
+DB_PASSWORD="quizpass223"
+DB_NAME="quizdb"
 
 # Switch to postgres user and execute SQL commands
 sudo -i -u postgres psql <<EOF
